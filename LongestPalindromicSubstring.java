@@ -2,7 +2,7 @@ package org.example;
 
 public class LongestPalindromicSubstring {
     public static String longestPalindrome(String s) {
-        if (s == null || s.length() == 0) {
+        if (s == null || s.isEmpty()) {
             return "";
         }
 
@@ -30,7 +30,6 @@ public class LongestPalindromicSubstring {
         }
         return right - left - 1;
     }
-
     public static void main(String[] args) {
         String input = "babad";
         String result = longestPalindrome(input);
