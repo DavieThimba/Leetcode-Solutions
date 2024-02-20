@@ -21,8 +21,7 @@ public class AddListNodes {
 
             sum += carry;
             carry = sum / 10;
-            ListNode node = new ListNode(sum % 10);
-            current = node;
+            current = new ListNode(sum % 10);
         }
         return dummy.next;
     }
