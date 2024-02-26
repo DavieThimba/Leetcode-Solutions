@@ -3,7 +3,7 @@ package org.example;
 public class ZigzagConversion {
     public static String convert(String s, int numRows) {
         if (numRows == 1 || numRows >= s.length()) {
-            return s;  // No change needed for a single row or when numRows is greater than or equal to the string length.
+            return s;
         }
 
         StringBuilder[] rows = new StringBuilder[numRows];
@@ -30,6 +30,10 @@ public class ZigzagConversion {
         }
 
         return result.toString();
+    }
+
+    public static void main(String[] args) {
+
     }
 }
 
